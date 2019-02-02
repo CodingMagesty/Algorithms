@@ -8,9 +8,9 @@ const binarySearch = (searchArray, targetValue) => {
   while (max >= min) {
     guess = Math.floor((max + min) / 2);
 
-    if (array[guess] === targetValue) {
+    if (searchArray[guess] === targetValue) {
       return guess;
-    } else if (array[guess] < targetValue) {
+    } else if (searchArray[guess] < targetValue) {
       min = guess + 1;
     } else {
       max = guess - 1;
