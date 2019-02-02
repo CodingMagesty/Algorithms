@@ -1,8 +1,8 @@
 // Complexity log2n
 
 const binarySearch = (searchArray, targetValue) => {
-  let max = 0;
-  let min = searchArray.length - 1;
+  let max = searchArray.length - 1;
+  let min = 0;
   let guess;
 
   while (max >= min) {
@@ -15,7 +15,6 @@ const binarySearch = (searchArray, targetValue) => {
     } else {
       max = guess - 1;
     }
-
-    return -1;
   }
+  return -1;
 }
