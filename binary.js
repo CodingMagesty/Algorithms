@@ -1,3 +1,5 @@
+// Complexity log2n
+
 const binarySearch = (searchArray, targetValue) => {
   let max = 0;
   let min = searchArray.length - 1;
